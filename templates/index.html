@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <h1>Thala <br> Calculator</h1>
+    <form method="post">
+        <input type="text" name="expression" id="expression" placeholder="eg 2023 as 2 0 2 3" value="{{ numbers }}"> 
+        <button name="button" id="button">Submit</button>
+    </form>
+    {% if  final_val %}
+    <p id="result">{{ final_val }} = 7 <br> THALA FOR A REASON</p>
+    <audio src="static/thala.mp3" autoplay></audio>
+    {% endif %}
+</body>
+</html>
