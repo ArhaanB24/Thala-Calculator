@@ -10,7 +10,7 @@
 <body>
     <h1>Thala <br> Calculator</h1>
     <form method="post">
-        <input type="text" name="expression" id="expression" placeholder="eg 2023 as 2 0 2 3" value="{{ numbers }}"> 
+        <input type="text" name="expression" id="expression" placeholder="eg 2023 as 2 0 2 3" value="{{ numbers }}" autocomplete="off"> 
         <button name="button" id="button">Submit</button>
     </form>
     {% if  final_val and thala == true%}
